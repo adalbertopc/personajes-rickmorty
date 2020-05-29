@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Generador de Nombres</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Generador de nombres</h1>
+			<div class="card">
+				<div class="card__left">
+					<form action="" class="formulario">
+						<div class="row">
+							<label for="status">Estado:</label>
+							<select name="status" id="status">
+								<option value="">Seleccionar</option>
+								<option value="alive">Vivo</option>
+								<option value="dead">Muerto</option>
+								<option value="unknow">Desconocido</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<label for="gender">Genero:</label>
+							<select name="gender" id="gender">
+								<option value="">Seleccionar</option>
+								<option value="male">Hombre</option>
+								<option value="female">Mujer</option>
+								<option value="genderless">Sin genero</option>
+								<option value="unknow">Desconocido</option>
+							</select>
+						</div>
+						<div class="row">
+							<label for="cantidad">Nombres a generar:</label>
+							<input type="text" name="cantidad" id="cantidad" />
+						</div>
+						<div class="row">
+							<input type="submit" value="Generar" class="button" />
+						</div>
+					</form>
+				</div>
+				<div class="card__right">
+					<h2 class="subtitulo">Nombres generados:</h2>
+					<div class="generados"></div>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

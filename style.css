@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #63b7af;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+	width: 70%;
+	margin: 20px auto;
+}
+
+.title {
+	text-align: center;
+	color: #fff;
+}
+
+.card {
+	background: #fff;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 20px;
+	min-height: 500px;
+}
+
+.card__left {
+}
+.formulario {
+	width: 100%;
+}
+.formulario .row {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.formulario .row label{
+    font-weight: bold;
+}
+.formulario .row input[type='text'],
+.formulario .row select {
+	width: 100%;
+    outline: none;
+
+	padding: 10px;
+	border: none;
+    border: 1px solid #abf0e9;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.button {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #ee8572;
+    padding: 15px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+}
+
+.button:hover{
+    background: #fc7860;
+}
+
+.card__right {
+	text-align: center;
+}
+
